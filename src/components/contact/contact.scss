@@ -1,0 +1,84 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: white;
+  display: flex;
+  color: black;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+  .title{
+    justify-content: flex-end;
+  }
+    img {
+      margin-top: 40px;
+      height: 90%;
+      bottom: 0;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+
+    .itemContainer {
+      // display: flex;
+      margin: 20px auto;
+      text-align: center;
+      align-items: center;
+      height: calc(90vh / 7);
+      width: 70%;
+      background-color: crimson;
+      border-radius: 10px;
+      color: white;
+      padding: 10px auto;
+    
+
+      @include mobile{
+        height: calc(40vh / 5);
+        margin-left: 50px;
+
+      }
+
+      .icon {
+        font-size: 30px;
+        margin-right: 5px;
+        margin-top: 10px;
+      @include mobile{
+        font-size: 15px;
+        margin: 5px 5px 0 0;
+      }
+
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        padding-top: 10px;
+      @include mobile{
+        padding: 5px;
+      }
+
+      }
+    }
+    .button{
+      text-align: center;
+      background-color: crimson;
+      padding:5px 10px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      border: none;
+    }
+    
+    }
+  }
+

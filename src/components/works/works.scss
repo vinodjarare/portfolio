@@ -1,0 +1,39 @@
+@import "../../global.scss";
+
+.works {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 70px) !important;
+  }
+  h1{
+    position: absolute;
+    text-align: center;
+    @include mobile{
+      justify-content: center;
+      position: relative;
+      margin-top: 0px;
+      margin-bottom: -40px;
+    }
+  }
+  .mainDiv{
+    display: flex;
+    justify-content: space-evenly;
+    @include mobile{
+      flex-direction: column;
+      align-items: center;
+    }
+  img{
+    margin-top: 50px;
+    align-items: center;
+    width: calc(100vw / 3.3);
+    @include mobile{
+      width: 100%;
+      height: calc(90vh / 4.2);
+    }
+  }
+}
+}
